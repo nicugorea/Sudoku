@@ -14,11 +14,13 @@ int main() {
 	std::cout << "\n\tPress any key to resolve it";
 	getch();
 	system( "cls" );
-	if(game.Solve())
+	int n = 0;
+	if(game.Solve(n))
 	game.Show();
 	else std::cout << "\n\tCan not resolve it";
 
 	std::cout << "\n\tPress any key to exit";
+	std::cout << "\n "<<n;
 	getch();
 
 
